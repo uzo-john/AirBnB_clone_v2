@@ -1,32 +1,27 @@
 #!/usr/bin/python3
-"""
-    contains state class to represent a state
-"""
-
+""" State Module for HBNB project """
+from os import getenv
 from models.base_model import BaseModel, Base
-import models
-from sqlalchemy import Column, String
+from models.city import City
+from sqlalchemy import Column, String, ForeignKey
 from sqlalchemy.orm import relationship
-from os import environ
-
-storage_engine = environ.get("HBNB_TYPE_STORAGE")
+import models
 
 
 class State(BaseModel, Base):
-    """ State class: class to represent states of cities"""
-    if (storage_engine == 'db'):
-        __tablename__ = "states"
-        name = Column(String(128), nullable=False)
-        cities = relationship("City", backref="state")
-    else:
-        name = ""
+    """ State class """
+    __tablename__ = 'states'
+    name = Column(String(128), nullable=False)
+    cities = relationship("City",
+                          backref="state", cascade="all, delete,delete-orphan")
 
+    if getenv('HBNB_TYPE_STORAGE') != "db":
         @property
         def cities(self):
-            """cities list
-            """
-            result = []
-            for j, i in models.storage.all(models.city.City).items():
-                if (i.state_id == self.id):
-                    result.append(i)
-            return result
+            """ returns list of City instances related to state """
+            from models import storage
+            list_cities = []
+            for city in storage.all(City).values():
+                if city.state_id == self.id:
+                    list_cities.append(city)
+            return list_cities

@@ -36,6 +36,12 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 ## Description of the project
 This is the first step towards building your first full web application: the AirBnB clone. The aim of the project is to deploy a replica of the Airbnb Website using my server. The final version of this project will have:
 
+## MySQL storage
+* replace the file storage by a Database storage
+* map your models to a table in database by using an O.R.M.
+![air 2](https://github.com/Egbuta-Godslove/AirBnB_clone_v2/assets/118941659/d46ed798-5cee-4137-992f-659f6a558f3c)
+
+
 * `A command interpreter to manipulate data without a visual interface, like a shell (for development and debugging)`
 * `A website (front-end) with static and dynamic functionalities`
 * `A comprehensive database to manage the backend functionalities`

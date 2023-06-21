@@ -1,5 +1,6 @@
 ## 0x02. AirBnB clone - MySQL
 `Group project` `Python` `OOP` `Back-end` `SQL` `MySQL` `ORM` `SQLAlchemy`
+![Air](https://github.com/Egbuta-Godslove/AirBnB_clone_v2/assets/118941659/17a5e438-bf9f-4599-922e-cd4bb149a277)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:

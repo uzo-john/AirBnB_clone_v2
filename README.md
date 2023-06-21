@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## 0x02. AirBnB clone - MySQL
 `Group project` `Python` `OOP` `Back-end` `SQL` `MySQL` `ORM` `SQLAlchemy`
 
@@ -46,6 +45,3 @@ This is the first step towards building your first full web application: the Air
 
 * Egbuta Godslove
 * Onyekachi Johnpaul
-=======
-AirBnB clone V2
->>>>>>> f31c49fd8f22504861ad100ad0f0186664d83625

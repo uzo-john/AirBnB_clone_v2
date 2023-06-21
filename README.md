@@ -43,7 +43,7 @@ This is the first step towards building your first full web application: the Air
 ## MySQL storage
 * replace the file storage by a Database storage
 * map your models to a table in database by using an O.R.M.
-![air 2](https://github.com/Egbuta-Godslove/AirBnB_clone_v2/assets/118941659/d46ed798-5cee-4137-992f-659f6a558f3c)
+# ![air 2](https://github.com/Egbuta-Godslove/AirBnB_clone_v2/assets/118941659/d46ed798-5cee-4137-992f-659f6a558f3c)
 
 ## Authors
 
